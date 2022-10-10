@@ -1,0 +1,32 @@
+name:                conjugateHylomorphisms
+version:             0.1.1
+synopsis:            Recursion schemes from adjunctions
+description:         Recursion schemes from adjunctions
+homepage:            https://github.com/jfaure/conjugateHylomorphisms
+license:             BSD3
+license-file:        LICENSE
+author:              James Faure
+maintainer:          jamiedavidfaure@gmail.com
+category:            Recursion
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version: >= 1.10
+
+library
+  exposed-modules:
+     CH
+  default-extensions:
+     FlexibleInstances
+     RankNTypes
+     ScopedTypeVariables
+     TypeApplications
+     LambdaCase
+
+  build-depends:       
+      base
+    , free
+    , comonad
+    , ghc-prim
+    , recursion-schemes
+
+  hs-source-dirs:      src/
